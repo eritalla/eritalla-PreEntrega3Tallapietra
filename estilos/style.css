@@ -27,6 +27,8 @@
 }
 .trayectoria .tray-foto img {
   width: 90%;
+  padding: 10px;
+  background-color: rgb(221, 201, 233);
 }
 .trayectoria .tray-texto {
   display: flex;
@@ -41,4 +43,8 @@
   .trayectoria {
     flex-direction: column;
   }
+}
+footer {
+  background: rgb(221, 201, 233);
+  background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
 }/*# sourceMappingURL=style.css.map */
