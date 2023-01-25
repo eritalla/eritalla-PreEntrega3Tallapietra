@@ -32,8 +32,14 @@
 }
 .trayectoria .tray-texto {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2em;
+}
+.trayectoria .tray-texto a {
+  text-decoration: none;
+  color: white;
 }
 .trayectoria .tray-texto p {
   margin-bottom: 0;
@@ -108,4 +114,35 @@ footer {
     grid-template-rows: repeat(16, 1fr);
     grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9";
   }
+}
+.historia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "foto-hist1 . ." ". foto-hist2 ." ". . foto-hist3" ". foto-hist4 ." "foto-hist5 . .";
+}
+.historia .foto-hist {
+  border: solid 1px rgb(221, 201, 233);
+  padding: 20px;
+  width: 90%;
+  margin: 10px;
+}
+.historia .foto-hist:hover {
+  transform: scale(1.1);
+  box-shadow: rgb(221, 201, 233);
+}
+.historia .foto-hist1 {
+  grid-area: foto-hist1;
+}
+.historia .foto-hist2 {
+  grid-area: foto-hist2;
+}
+.historia .foto-hist3 {
+  grid-area: foto-hist3;
+}
+.historia .foto-hist4 {
+  grid-area: foto-hist4;
+}
+.historia .foto-hist5 {
+  grid-area: foto-hist5;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+.historia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "foto-hist1 . ."
+        ". foto-hist2 ."
+        ". . foto-hist3"
+        ". foto-hist4 ."
+        "foto-hist5 . .";
+
+    .foto-hist {
+        border: solid 1px $rosita;
+        padding: 20px;
+        width: 90%;
+        margin: 10px;
+        
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $rosita;
+        }
+    }
+    .foto-hist1 {
+        grid-area: foto-hist1;
+    }
+    .foto-hist2 {
+        grid-area: foto-hist2;
+    }
+    .foto-hist3 {
+        grid-area: foto-hist3;
+    }
+    .foto-hist4 {
+        grid-area: foto-hist4;
+    }
+    .foto-hist5 {
+        grid-area: foto-hist5;
+    }
+}
