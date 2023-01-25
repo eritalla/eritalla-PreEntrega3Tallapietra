@@ -45,6 +45,14 @@
   margin-bottom: 0;
 }
 
+.tarjetita {
+  display: flex;
+  flex-direction: column;
+}
+.tarjetita img {
+  width: 100%;
+}
+
 @media screen and (max-width: 480px) {
   .trayectoria {
     flex-direction: column;
