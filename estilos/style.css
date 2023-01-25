@@ -47,4 +47,65 @@
 footer {
   background: rgb(221, 201, 233);
   background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "item1 item2 item3" "item4 item5 item6" "item7 item8 item9";
+}
+.catalogo .item {
+  border: solid 1px rgb(221, 201, 233);
+  padding: 20px;
+  width: 90%;
+  margin: 10px;
+}
+.catalogo .item:hover {
+  transform: scale(1.1);
+  box-shadow: rgb(221, 201, 233);
+}
+.catalogo .item1 {
+  grid-area: item1;
+}
+.catalogo .item2 {
+  grid-area: item2;
+}
+.catalogo .item3 {
+  grid-area: item3;
+}
+.catalogo .item4 {
+  grid-area: item4;
+}
+.catalogo .item5 {
+  grid-area: item5;
+}
+.catalogo .item6 {
+  grid-area: item6;
+}
+.catalogo .item7 {
+  grid-area: item7;
+}
+.catalogo .item8 {
+  grid-area: item8;
+}
+.catalogo .item9 {
+  grid-area: item9;
+}
+
+@media screen and (max-width: 768px) {
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 .";
+  }
+}
+@media screen and (max-width: 480px) {
+  .catalogo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9";
+  }
 }/*# sourceMappingURL=style.css.map */

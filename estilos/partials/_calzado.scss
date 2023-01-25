@@ -1,0 +1,81 @@
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item5 item6"
+        "item7 item8 item9";
+
+    .item {
+        border: solid 1px $rosita;
+        padding: 20px;
+        width: 90%;
+        margin: 10px;
+        
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $rosita;
+        }
+    }
+    .item1 {
+        grid-area: item1;
+    }
+    .item2 {
+        grid-area: item2;
+    }
+    .item3 {
+        grid-area: item3;
+    }
+    .item4 {
+        grid-area: item4;
+    }
+    .item5 {
+        grid-area: item5;
+    }
+    .item6 {
+        grid-area: item6;
+    }
+    .item7 {
+        grid-area: item7;
+    }
+    .item8 {
+        grid-area: item8;
+    }
+    .item9 {
+        grid-area: item9;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8"
+            "item9 .";
+    }
+}
+@media screen and (max-width: 480px) {
+    .catalogo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-areas: 
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8"
+            "item9";
+    }
+}
