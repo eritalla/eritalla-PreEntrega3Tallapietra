@@ -117,7 +117,7 @@ footer {
   .catalogo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 .";
   }
 }
@@ -125,7 +125,7 @@ footer {
   .catalogo {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9";
   }
 }
