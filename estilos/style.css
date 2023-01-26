@@ -165,7 +165,7 @@ footer {
   .historia {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "foto-hist1 foto-hist2" "foto-hist3 foto-hist4" "foto-hist5 .";
   }
 }
@@ -173,7 +173,7 @@ footer {
   .historia {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "foto-hist1" "foto-hist2" "foto-hist3" "foto-hist4" "foto-hist5";
   }
 }/*# sourceMappingURL=style.css.map */
