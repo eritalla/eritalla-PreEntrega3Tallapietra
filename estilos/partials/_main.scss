@@ -20,16 +20,17 @@
         align-items: center;
         gap: 2em;
 
-        a { 
-            text-decoration: none;
-            color: white;
-        }
 
         p{
             margin-bottom: 0;
     }
 
 }
+}
+.articulos {
+    display: flex;
+    flex-direction: row;
+
 }
 .tarjetita {
     display: flex;

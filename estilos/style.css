@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .logo {
   display: flex;
   background: rgb(221, 201, 233);
@@ -37,12 +42,13 @@
   align-items: center;
   gap: 2em;
 }
-.trayectoria .tray-texto a {
-  text-decoration: none;
-  color: white;
-}
 .trayectoria .tray-texto p {
   margin-bottom: 0;
+}
+
+.articulos {
+  display: flex;
+  flex-direction: row;
 }
 
 .tarjetita {
@@ -125,14 +131,14 @@ footer {
 }
 .historia {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "foto-hist1 . ." ". foto-hist2 ." ". . foto-hist3" ". foto-hist4 ." "foto-hist5 . .";
+  grid-template-areas: "foto-hist1 ." ". foto-hist2" "foto-hist3 ." ". foto-hist4" "foto-hist5 .";
 }
 .historia .foto-hist {
   border: solid 1px rgb(221, 201, 233);
   padding: 20px;
-  width: 90%;
+  width: 100%;
   margin: 10px;
 }
 .historia .foto-hist:hover {
@@ -153,4 +159,21 @@ footer {
 }
 .historia .foto-hist5 {
   grid-area: foto-hist5;
+}
+
+@media screen and (max-width: 768px) {
+  .historia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "foto-hist1 foto-hist2" "foto-hist3 foto-hist4" "foto-hist5 .";
+  }
+}
+@media screen and (max-width: 480px) {
+  .historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-areas: "foto-hist1" "foto-hist2" "foto-hist3" "foto-hist4" "foto-hist5";
+  }
 }/*# sourceMappingURL=style.css.map */
