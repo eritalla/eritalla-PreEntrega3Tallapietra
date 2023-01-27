@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: "Yellowtail", cursive;
 }
 
 a {
@@ -25,6 +30,7 @@ a {
   flex-direction: row;
   margin-block: 20px;
   gap: 2rem;
+  margin-bottom: 50px;
 }
 .trayectoria .tray-foto {
   display: flex;
@@ -46,16 +52,18 @@ a {
   margin-bottom: 0;
 }
 
-.articulos {
+.trestarjetas {
+  margin-bottom: 50px;
+}
+.trestarjetas .articulos {
   display: flex;
   flex-direction: row;
 }
-
-.tarjetita {
+.trestarjetas .tarjetita {
   display: flex;
   flex-direction: column;
 }
-.tarjetita img {
+.trestarjetas .tarjetita img {
   width: 100%;
 }
 
@@ -176,4 +184,30 @@ footer {
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "foto-hist1" "foto-hist2" "foto-hist3" "foto-hist4" "foto-hist5";
   }
+}
+.promos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.promos .promo {
+  padding: 30px;
+  border: solid 1px black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.promos .promo .bannerpromo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promos .promo button {
+  background-color: rgb(221, 201, 233);
+  border-radius: 5px;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */

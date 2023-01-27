@@ -3,6 +3,7 @@
     flex-direction: row;
     margin-block: 20px;
     gap: 2rem;
+    margin-bottom: 50px;
 
     .tray-foto{
         display: flex;
@@ -27,19 +28,29 @@
 
 }
 }
-.articulos {
-    display: flex;
-    flex-direction: row;
 
-}
-.tarjetita {
-    display: flex;
-    flex-direction: column;
 
-    img{
-        width: 100%;
+    .trestarjetas {
+        margin-bottom: 50px;
+
+        .articulos {
+            display: flex;
+            flex-direction: row;
+        
+        }
+        .tarjetita {
+            display: flex;
+            flex-direction: column;
+        
+            img{
+                width: 100%;
+            }
+        }
     }
-}
+
+    
+
+
 
 @media screen and (max-width: 480px) {
     .trayectoria {
