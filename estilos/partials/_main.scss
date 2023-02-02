@@ -9,6 +9,9 @@ main {
     object-fit: cover;
     font-weight: bold;
 }
+.menu {
+    background-image:url(../imagenes/fondotextura.avif);
+}
 .trayectoria{
     display: flex;
     flex-direction: row;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
 }
 
 h1, h2 {
-  font-family: "Yellowtail", cursive;
+  font-family: "Playfair Display", serif;
 }
 
 a {
@@ -38,6 +38,10 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   font-weight: bold;
+}
+
+.menu {
+  background-image: url(../imagenes/fondotextura.avif);
 }
 
 .trayectoria {
