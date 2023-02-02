@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./estilos/style.css">
 </head>
 <body>
+  <marquee class="marquesina">3 cuotas sin interés -         -3 cuotas sin interés -             - 3 cuotas sin interés</marquee>
     <!-- empieza header -->
     <header>
         <div class="logo">
@@ -55,7 +56,7 @@
     <main>
         <h1></h1>
         <!-- carrousel -->
-        <div class="container carrusel">
+        <div class="container-fluidcarrusel">
             <div id="slidesfotos" class="carousel slide">
                 <div class="carousel-indicators barraslides">
                     <button type="button" data-bs-target="#slidesfotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -92,19 +93,26 @@
             </div>
         </div>
 
-        <section class="trayectoria container">
-            <div class="tray-foto">
-                <h2>Nuestra trayectoria</h2>
-                <img class="rounded" src="./imagenes/trayectoria.jpg" alt="foto de los dueños en la tienda">
-            </div>
-            <div class="tray-texto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse vero, ipsa eaque, est possimus tempore alias ratione pariatur nobis saepe maiores sequi facere nostrum exercitationem magni, voluptatem sit! Voluptates, modi?</p>
-                <button type="button" class="btn btn-dark"><a href="./pages/trayectoria.html">Leer más</a></button>
-            </div>
+        <div class="clearfix m-5">
+          <img src="./imagenes/trayectoria.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+          <h2>Nuestra trayectoria</h2>
+          <p>
+            A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+          </p>
+        
+          <p>
+            As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+          </p>
+        
+          <p>
+            And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+          </p>
+        </div>
+            
             
         </section>
 <!--3 cards verticales-->
-    <section class="container trestarjetas">
+    <section class="container-fluid trestarjetas">
       <div class="row articulos"> 
         <div class="col-md-4 tarjetita tarjetita1">
           <img src="./imagenes/Asesoría.png" alt="mujer con sombrero rosa">

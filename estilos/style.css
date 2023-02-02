@@ -25,6 +25,21 @@ a {
   margin-left: 31px;
 }
 
+main {
+  background-image: url(../imagenes/fondotextura.avif);
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.marquesina {
+  background-image: url(../imagenes/fondotextura.avif);
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-weight: bold;
+}
+
 .trayectoria {
   display: flex;
   flex-direction: row;
@@ -50,6 +65,11 @@ a {
 }
 .trayectoria .tray-texto p {
   margin-bottom: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+.trayectoria .tray-texto .tray-boton {
+  font-size: 1em;
 }
 
 .trestarjetas {
@@ -70,6 +90,11 @@ a {
 @media screen and (max-width: 480px) {
   .trayectoria {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 991px) {
+  .trayectoria .tray-foto img {
+    width: 80%;
   }
 }
 footer {

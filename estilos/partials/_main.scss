@@ -1,3 +1,14 @@
+main {
+    background-image:url(../imagenes/fondotextura.avif);
+    background-size: 100%;
+    object-fit: cover;
+}
+.marquesina{
+    background-image:url(../imagenes/fondotextura.avif);
+    background-size: 100%;
+    object-fit: cover;
+    font-weight: bold;
+}
 .trayectoria{
     display: flex;
     flex-direction: row;
@@ -24,8 +35,12 @@
 
         p{
             margin-bottom: 0;
+            font-size: 1.5em;
+            text-align: center;
     }
-
+        .tray-boton {
+            font-size: 1em;
+        }
 }
 }
 
@@ -56,4 +71,14 @@
     .trayectoria {
         flex-direction: column;
     }
+}
+@media screen and (max-width: 991px) {
+    .trayectoria {
+        .tray-foto{
+            img {
+                width: 80%;
+            }
+        }
+    }
+    
 }
