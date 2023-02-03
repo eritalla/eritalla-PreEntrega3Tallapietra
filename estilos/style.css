@@ -106,6 +106,12 @@ footer {
   background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
 }
 
+.redes {
+  display: flex;
+  text-align: center;
+  margin-left: 100px;
+}
+
 .catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
