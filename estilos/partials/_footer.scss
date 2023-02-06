@@ -1,10 +1,35 @@
-footer {
-    background: $rosita;
-    background: $degradado;
 
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $rosita;
+    background: $degradado;
+    overflow: hidden;
+    .waves {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-image:url(../imagenes/wave.png);
+        background-size: 1000px 100px;
+        animation: waves 20s linear infinite;
+    }
 }
+
 .redes {
     display: flex;
     text-align: center;
     margin-left: 100px;
+}
+
+
+@keyframes waves {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
 }

@@ -46,10 +46,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   font-weight: bold;
-}
-
-.menu {
-  background-image: url(../imagenes/fondotextura.avif);
+  font-family: "Playfair Display", serif;
 }
 
 .trayectoria {
@@ -109,9 +106,24 @@ main {
     width: 80%;
   }
 }
-footer {
-  background: rgb(221, 201, 233);
+.contenedor {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(221, 201, 233);
   background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
+  overflow: hidden;
+}
+.contenedor .waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../imagenes/wave.png);
+  background-size: 1000px 100px;
+  -webkit-animation: waves 20s linear infinite;
+          animation: waves 20s linear infinite;
 }
 
 .redes {
@@ -120,6 +132,23 @@ footer {
   margin-left: 100px;
 }
 
+@-webkit-keyframes waves {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes waves {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
 .catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -3,14 +3,13 @@ main {
     background-size: 100%;
     object-fit: cover;
 }
+
 .marquesina{
     background-image:url(../imagenes/fondotextura.avif);
     background-size: 100%;
     object-fit: cover;
     font-weight: bold;
-}
-.menu {
-    background-image:url(../imagenes/fondotextura.avif);
+    font-family: "Playfair Display", serif;
 }
 .trayectoria{
     display: flex;
