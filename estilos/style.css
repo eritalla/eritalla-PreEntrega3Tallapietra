@@ -14,6 +14,14 @@ a {
   color: white;
 }
 
+.menu {
+  background-image: url(./imagenes/fondotextura.avif);
+}
+
+.menu1 {
+  background-image: url(../imagenes/fondotextura.avif);
+}
+
 .logo {
   display: flex;
   background: rgb(221, 201, 233);
@@ -235,6 +243,8 @@ footer {
   gap: 3rem;
   margin-bottom: 30px;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: rgba(248, 221, 252, 0.3);
 }
 .promos .promo .bannerpromo {
   display: flex;
@@ -245,4 +255,18 @@ footer {
   background-color: rgb(221, 201, 233);
   border-radius: 5px;
   padding: 5px;
+}
+
+.consejos {
+  padding: 20px;
+  margin: 20px;
+}
+.consejos .consejos-titulo {
+  margin: 20px 0;
+}
+.consejos .consejos-subtit {
+  font-size: 1.4em;
+}
+.consejos ol li {
+  font-size: 1.2em;
 }/*# sourceMappingURL=style.css.map */
