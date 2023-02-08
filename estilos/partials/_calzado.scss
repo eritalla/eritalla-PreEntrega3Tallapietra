@@ -48,7 +48,35 @@
     }
     
 }
+.logo {
+    display: flex;
+    background: $rosita;
+    background: $degradado;
 
+    .isologo {
+        color: black;
+        margin-top: 60px;
+        margin-left: 31px;
+        font-size: 3em;
+        font-family: $fuente-titulos;
+        }
+
+}
+
+@media screen and (max-width: 780px) {
+    .isologo {
+        font-size: 2em;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .logo {
+        .isologo{
+            font-size: 1.5em;
+        }
+    }
+    
+}
 @media screen and (max-width: 768px) {
     .catalogo {
         display: grid;

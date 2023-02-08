@@ -19,12 +19,24 @@ a {
   background: rgb(221, 201, 233);
   background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
 }
-.logo h1 {
+.logo .isologo {
   color: black;
   margin-top: 60px;
   margin-left: 31px;
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
 }
 
+@media screen and (max-width: 780px) {
+  .isologo {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo .isologo {
+    font-size: 1.5em;
+  }
+}
 .marquesina {
   font-weight: bold;
   font-family: "Playfair Display", serif;
@@ -117,6 +129,29 @@ a {
   color: black;
 }
 
+.logo {
+  display: flex;
+  background: rgb(221, 201, 233);
+  background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
+}
+.logo .isologo {
+  color: black;
+  margin-top: 60px;
+  margin-left: 31px;
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
+}
+
+@media screen and (max-width: 780px) {
+  .isologo {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo .isologo {
+    font-size: 1.5em;
+  }
+}
 @-webkit-keyframes waves {
   0% {
     background-position-x: 0;
@@ -125,7 +160,6 @@ a {
     background-position-x: 1000px;
   }
 }
-
 @keyframes waves {
   0% {
     background-position-x: 0;
@@ -178,6 +212,29 @@ a {
   grid-area: item9;
 }
 
+.logo {
+  display: flex;
+  background: rgb(221, 201, 233);
+  background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
+}
+.logo .isologo {
+  color: black;
+  margin-top: 60px;
+  margin-left: 31px;
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
+}
+
+@media screen and (max-width: 780px) {
+  .isologo {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo .isologo {
+    font-size: 1.5em;
+  }
+}
 @media screen and (max-width: 768px) {
   .catalogo {
     display: grid;
@@ -226,6 +283,29 @@ a {
   grid-area: foto-hist5;
 }
 
+.logo {
+  display: flex;
+  background: rgb(221, 201, 233);
+  background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
+}
+.logo .isologo {
+  color: black;
+  margin-top: 60px;
+  margin-left: 31px;
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
+}
+
+@media screen and (max-width: 780px) {
+  .isologo {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo .isologo {
+    font-size: 1.5em;
+  }
+}
 @media screen and (max-width: 768px) {
   .historia {
     display: grid;
@@ -272,6 +352,29 @@ a {
   padding: 5px;
 }
 
+.logo {
+  display: flex;
+  background: rgb(221, 201, 233);
+  background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
+}
+.logo .isologo {
+  color: black;
+  margin-top: 60px;
+  margin-left: 31px;
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
+}
+
+@media screen and (max-width: 780px) {
+  .isologo {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo .isologo {
+    font-size: 1.5em;
+  }
+}
 .consejos {
   padding: 20px;
   margin: 20px;
@@ -284,4 +387,28 @@ a {
 }
 .consejos ol li {
   font-size: 1.2em;
+}
+
+.logo {
+  display: flex;
+  background: rgb(221, 201, 233);
+  background: linear-gradient(270deg, rgb(221, 201, 233) 8%, rgb(226, 203, 215) 38%, rgb(228, 231, 233) 86%);
+}
+.logo .isologo {
+  color: black;
+  margin-top: 60px;
+  margin-left: 31px;
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
+}
+
+@media screen and (max-width: 780px) {
+  .isologo {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo .isologo {
+    font-size: 1.5em;
+  }
 }/*# sourceMappingURL=style.css.map */
