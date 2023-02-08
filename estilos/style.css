@@ -14,14 +14,6 @@ a {
   color: white;
 }
 
-.menu {
-  background-image: url(./imagenes/fondotextura.avif);
-}
-
-.menu1 {
-  background-image: url(../imagenes/fondotextura.avif);
-}
-
 .logo {
   display: flex;
   background: rgb(221, 201, 233);
@@ -33,18 +25,7 @@ a {
   margin-left: 31px;
 }
 
-main {
-  background-image: url(../imagenes/fondotextura.avif);
-  background-size: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .marquesina {
-  background-image: url(../imagenes/fondotextura.avif);
-  background-size: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   font-weight: bold;
   font-family: "Playfair Display", serif;
 }
@@ -127,8 +108,13 @@ main {
 
 .redes {
   display: flex;
+  flex-direction: column;
   text-align: center;
   margin-left: 100px;
+}
+
+.icono {
+  color: black;
 }
 
 @-webkit-keyframes waves {
@@ -261,6 +247,7 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 3rem;
+  margin-top: 30px;
 }
 .promos .promo {
   padding: 30px;

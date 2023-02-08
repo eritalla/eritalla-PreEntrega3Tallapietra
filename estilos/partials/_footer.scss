@@ -20,8 +20,13 @@
 
 .redes {
     display: flex;
+    flex-direction: column;
     text-align: center;
     margin-left: 100px;
+}
+
+.icono{
+    color: black;
 }
 
 
@@ -33,3 +38,4 @@
         background-position-x: 1000px;
     }
 }
+
