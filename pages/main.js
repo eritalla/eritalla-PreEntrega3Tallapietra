@@ -136,7 +136,16 @@ const carrito = [];
 function agregarAlCarrito(e) {
     
     const id = e.currentTarget.id;
-    console.log(id);
+    const prodAgregado = productos.find(producto => producto.id === id);
+
+    if (prodAgregado.some(producto => producto.id === id)) {
+        
+    } else {
+        prodAgregado.cantidad = 1;
+        carrito.push(prodAgregado);
+    }
+
+    
 
 
 }
