@@ -84,6 +84,7 @@ const catalogoContainer = document.querySelector ( "#catalogoContainer");
 const botonesTipo = document.querySelectorAll(".tipoCalzado");
 const tituloTipos = document.querySelector("#tipos");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
+const cantEnCarrito = document.querySelector(".cantidad");
 
 
 function inyectarProductos (productosSeleccionados) {
@@ -138,19 +139,20 @@ function agregarAlCarrito(e) {
     const id = e.currentTarget.id;
     const prodAgregado = productos.find(producto => producto.id === id);
 
-    if (prodAgregado.some(producto => producto.id === id)) {
-        
+    if (carrito.some(producto => producto.id === id)) {
+        const index = carrito.findIndex(producto => producto.id === id);
+        carrito[index].cantidad++;
     } else {
         prodAgregado.cantidad = 1;
         carrito.push(prodAgregado);
     }
-
-    
-
-
+    actualizarCantEnCarrito();
 }
 
-
+function actualizarCantEnCarrito() {
+    let actualizacionEnCarrito = carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
+    cantEnCarrito.innerText = actualizacionEnCarrito;
+}
 
 
 
