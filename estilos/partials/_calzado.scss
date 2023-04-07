@@ -60,8 +60,54 @@
         font-size: 3em;
         font-family: $fuente-titulos;
         }
-
 }
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .opciones {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        
+        .opcion {
+
+            .tipoCalzado {
+                padding: 5px;
+                background-color: $rosita;
+                border-radius: 5px;
+                border: none;
+
+                &:hover {
+                    background-color: rgb(209, 175, 228);
+                }
+            }
+
+            a {
+                color: black;
+                padding: 5px;
+                background-color: $rosita;
+                border-radius: 5px;
+                border: none;
+                margin-bottom: 0;
+
+                &:hover {
+                    background-color: rgb(209, 175, 228);
+                }
+            }
+
+            .cantidad {
+                background-color: rgb(233, 166, 177);
+                padding: 3px;
+                border-radius: 3px;
+                color: rgb(135, 75, 204);
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 780px) {
     .isologo {

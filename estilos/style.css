@@ -216,6 +216,44 @@ a {
   font-family: "Playfair Display", serif;
 }
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu .opciones {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.menu .opciones .opcion .tipoCalzado {
+  padding: 5px;
+  background-color: rgb(221, 201, 233);
+  border-radius: 5px;
+  border: none;
+}
+.menu .opciones .opcion .tipoCalzado:hover {
+  background-color: rgb(209, 175, 228);
+}
+.menu .opciones .opcion a {
+  color: black;
+  padding: 5px;
+  background-color: rgb(221, 201, 233);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 0;
+}
+.menu .opciones .opcion a:hover {
+  background-color: rgb(209, 175, 228);
+}
+.menu .opciones .opcion .cantidad {
+  background-color: rgb(233, 166, 177);
+  padding: 3px;
+  border-radius: 3px;
+  color: rgb(135, 75, 204);
+}
+
 @media screen and (max-width: 780px) {
   .isologo {
     font-size: 2em;
