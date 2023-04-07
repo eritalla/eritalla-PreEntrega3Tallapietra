@@ -7,6 +7,8 @@ const productosCarrito = document.querySelector("#productosAgregadosCarrito");
 const carritoBotones = document.querySelector("#carritoBotones");
 const agradecimiento = document.querySelector("#agradecimiento");
 
+productosCarrito.innerHTML = "";
+
 
 if (prodsEnCarrito) {
     vacio.innerHTML = "";

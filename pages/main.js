@@ -87,6 +87,8 @@ let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const cantEnCarrito = document.querySelector(".cantidad");
 
 
+
+
 function inyectarProductos (productosSeleccionados) {
 
     catalogoContainer.innerHTML = "";
@@ -132,7 +134,15 @@ function actualizarBotonesAgregar() {
     });
 }
 
-const carrito = [];
+let carrito;
+const prodsEnCarritoLS = JSON.parse(localStorage.getItem("prod-seleccionado"));
+if (prodsEnCarritoLS) {
+    carrito = prodsEnCarritoLS;
+    actualizarCantEnCarrito();
+} else {
+    carrito = [];
+}
+
 
 function agregarAlCarrito(e) {
     
