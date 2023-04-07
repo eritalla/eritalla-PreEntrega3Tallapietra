@@ -147,6 +147,8 @@ function agregarAlCarrito(e) {
         carrito.push(prodAgregado);
     }
     actualizarCantEnCarrito();
+
+    localStorage.setItem("prod-seleccionado", JSON.stringify(carrito));
 }
 
 function actualizarCantEnCarrito() {
