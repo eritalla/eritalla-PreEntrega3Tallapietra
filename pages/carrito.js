@@ -6,6 +6,8 @@ const vacio = document.querySelector("#vacio");
 const productosCarrito = document.querySelector("#productosAgregadosCarrito");
 const carritoBotones = document.querySelector("#carritoBotones");
 const agradecimiento = document.querySelector("#agradecimiento");
+let botonesEliminar = document.querySelectorAll(".botonesEliminar");
+const botonVaciar = document.querySelector("#vaciar");
 
 productosCarrito.innerHTML = "";
 
@@ -21,8 +23,10 @@ if (prodsEnCarrito) {
         <p>Precio:${producto.precio}</p>
         <p>Cantidad:${producto.cantidad}</p>
         <p>Subtotal:${producto.precio * producto.cantidad}</p>
-        <button id="${producto.id}">Eliminar del carrito</button>
+        <button class="botonesEliminar" id="${producto.id}">Eliminar del carrito</button>
         `
         productosCarrito.append(div);
     });
+} else {
+
 }
